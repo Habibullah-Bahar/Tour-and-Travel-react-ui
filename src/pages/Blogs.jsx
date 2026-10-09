@@ -3,7 +3,7 @@ import BlogComp from "../Components/BlogComp/BlogComp";
 
 const Blogs = () => {
   return (
-    <div className="min-h-screen pt-34 pb-16 bg-gray-100">
+    <div className="min-h-screen pt-34 pb-16 bg-gray-100 dark:bg-gray-900 dark:text-white">
       <BlogComp />
     </div>
   );

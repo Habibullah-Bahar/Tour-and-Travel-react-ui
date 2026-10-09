@@ -22,15 +22,15 @@ const DropdownLinks = [
   },
 ];
 
-const Navbar = ({togglePopup}) => {
+const Navbar = ({ togglePopup }) => {
   const [showMenu, setShowMenu] = React.useState(false);
   const toggleMenu = () => {
     setShowMenu((prev) => !prev);
   };
   return (
     <div>
-      <div className="fixed top-0 right-0 w-full bg-white text-black shadow-md backdrop-blur-sm z-50">
-        <div className="sm:flex justify-between items-center backdrop-blur-sm py-[2px] hidden px-24 bg-gradient-to-r from-primary to-secondary text-white">
+      <div className="w-full bg-white text-black shadow-md backdrop-blur-sm dark:bg-gray-900 dark:text-white">
+        <div className="sm:flex justify-between w-full items-center backdrop-blur-sm py-[2px] hidden px-4 sm:px-12 md:px-24 bg-gradient-to-r from-primary to-secondary text-white">
           <h1 className="text-md">20% off on next booking</h1>
           <p className="flex items-center gap-2">
             <span>
@@ -40,8 +40,8 @@ const Navbar = ({togglePopup}) => {
           </p>
         </div>
         {/* lower Navbar section  */}
-        <div>
-          <div className="flex justify-between items-center sm:px-16 px-4">
+        <div className="w-full px-4 md:px-16">
+          <div className="flex justify-between items-center">
             <div>
               {/* section 1  */}
               <div>
@@ -60,7 +60,7 @@ const Navbar = ({togglePopup}) => {
             </div>
             <div className="hidden md:block">
               {/* section 2  */}
-              <ul className="flex justify-center items-center gap-6">
+              <ul className="flex items-center gap-6">
                 <li className="py-4">
                   <NavLink
                     to="/"
@@ -130,12 +130,11 @@ const Navbar = ({togglePopup}) => {
                     <p>Quick Links</p>
                     <MdArrowDropDown className="text-xl group-hover:rotate-180 transition-all duration-300" />
                   </div>
-                  <div className=" hidden z-10  group-hover:block absolute top-full -translate-x-6 text-black bg-gray-50  shadow-sm   rounded-md py-2 w-[150px] items-center">
-                    <ul className=" text-left pt-6 p-1 ">
+                  <div className="hidden z-10 group-hover:block absolute top-full -translate-x-6 text-black bg-gray-50 shadow-sm rounded-md py-2 w-[150px] items-center">
+                    <ul className="text-left pt-6 p-1">
                       {DropdownLinks.map((item, idx) => (
                         <li key={idx}>
                           <a
-  
                             className="w-full hover:bg-primary/20 rounded-md p-2 inline-block"
                             href={item.link}
                           >
@@ -159,19 +158,17 @@ const Navbar = ({togglePopup}) => {
                     Book Now
                   </button>
                 </div>
-                <div className="md:hidden  text-center relative pl-8">
-                  {/* mobile Hamburger icon  */}
-
+                <div className="md:hidden flex items-center gap-3">
                   {showMenu ? (
                     <HiMenuAlt1
                       onClick={toggleMenu}
-                      className="cursor-pointer absolute -translate-y-3 right-0"
+                      className="cursor-pointer"
                       size={30}
                     />
                   ) : (
                     <HiMenuAlt3
                       onClick={toggleMenu}
-                      className="cursor-pointer absolute -translate-y-3 right-0"
+                      className="cursor-pointer"
                       size={30}
                     />
                   )}
@@ -181,10 +178,7 @@ const Navbar = ({togglePopup}) => {
           </div>
         </div>
       </div>
-      <ResponsiveMenu 
-      showMenu={showMenu}
-      setShowMenu={setShowMenu}
-      />
+      <ResponsiveMenu showMenu={showMenu} setShowMenu={setShowMenu} />
     </div>
   );
 };

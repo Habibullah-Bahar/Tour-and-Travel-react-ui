@@ -17,7 +17,7 @@ const Home = () => {
     setOrderPopUp(!orderPopup);
   };
   return (
-    <div>
+    <div className="h-full w-full">
       <div className="h-[700px] relative">
         <video
           src={NatureVideo}
@@ -25,7 +25,7 @@ const Home = () => {
           muted
           loop
           className="absolute top-0 right-0 w-full h-[700px] object-cover z-[-1] "
-        />
+        /> 
         <Hero />
       </div>
       <Places togglePopup={togglePopup}/>

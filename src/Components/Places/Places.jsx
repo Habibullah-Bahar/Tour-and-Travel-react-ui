@@ -65,7 +65,7 @@ const PlacesData = [
 ];
 const Places = ({ togglePopup }) => {
   return (
-    <div className="bg-gray-50 py-10 w-full mx-auto dark:text-white dark:bg-gray-950">
+    <div className="bg-white text-black py-10 w-full mx-auto dark:text-white dark:bg-gray-950">
       <div className="px-24">
         <h1
           data-aos="fade-up"

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Banner = ({TravelImage}) => {
   return (
-    <div className='mb-16 '>
+    <div className='mb-16 dark:bg-gray-900 dark:text-white '>
       <div
       data-aos="zoom-in"
       className='w-full'>

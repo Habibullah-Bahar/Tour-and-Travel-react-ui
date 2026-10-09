@@ -12,7 +12,7 @@ import "aos/dist/aos.css";
 
 const App = () => {
   React.useEffect(() => {
-    Aos.init({
+    Aos.init({ 
       offset: 100,
       duration: 900,
       easing: "ease-in-sine",

@@ -28,7 +28,7 @@ const FooterLinks = [
 ];
 const Footer = () => {
   return (
-    <div>
+    <div className="dark:bg-gray-900 dark:text-white bg-white">
       <div className="mt-6 relative overflow-hidden min-h-[550px]  flex justify-center items-center">
         <video
           src={NatureVid}

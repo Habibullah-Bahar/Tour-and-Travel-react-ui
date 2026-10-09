@@ -27,7 +27,7 @@ const testimonialData = [
 const Testimonial = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center bg-white dark:bg-gray-900 dark:text-white">
         <div className="text-center mb-20 max-w-[400px] ">
           <h1 className="text-sm bg-gradient-to-r to-secondary from-primary bg-clip-text text-transparent">
             Testimonial

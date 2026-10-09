@@ -8,7 +8,7 @@ import { IoFastFood } from "react-icons/io5";
 const Banner2 = () => {
   return (
     <>
-      <div className="bg-gray-100 min-h-[550px] px-24 pb-8">
+      <div className="bg-gray-100 min-h-[550px] px-24 pb-8 dark:bg-gray-900 dark:text-white">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
           <div
           data-aos="flip-up"
@@ -16,7 +16,7 @@ const Banner2 = () => {
             <img
               src={TravelImage}
               alt=""
-              className="max-w-[450px] w-full h-[350px] object-cover mx-auto drop-shadow-[5px_5px_12px_rgba(0,0,0,0.7)]"
+              className="max-w-[450px] w-full h-[200px] sm:h-[350px] object-cover mx-auto drop-shadow-[5px_5px_12px_rgba(0,0,0,0.7)]"
             />
           </div>
           <div>
