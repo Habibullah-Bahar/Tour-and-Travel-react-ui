@@ -74,7 +74,7 @@ const Footer = () => {
             {/* links  */}
             <div>
               <ul>
-                <h1 className="text-2xl font-bold w-5 pb-3">Important Links</h1>
+                <h1 className="text-2xl font-bold w-5 pb-3 dark:text-gray-600">Important Links</h1>
                 {FooterLinks.map((item, id) => (
                   <li key={id}>
                     <div className="flex gap-1 items-center py-2 text-gray-600 hover:translate-x-1 transition-all duration-500 hover:text-primary">
@@ -106,7 +106,7 @@ const Footer = () => {
             </div>
 
             {/* links  */}
-            <div>
+            <div className="hidden md:block" >
               <ul>
                 <h1 className="text-2xl font-bold w-5 pb-3">Important Links</h1>
                 {FooterLinks.map((item, id) => (
