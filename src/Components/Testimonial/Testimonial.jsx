@@ -1,80 +1,90 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
 import "swiper/css/pagination";
 
 const testimonialData = [
   {
     id: 1,
     name: "Samuel",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    role: "Product Designer",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio.",
     img: "https://picsum.photos/101/101",
   },
   {
     id: 2,
     name: "John Doe",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    role: "Software Engineer",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio.",
     img: "https://picsum.photos/102/102",
   },
   {
     id: 3,
     name: "Smith",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    role: "Marketing Lead",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio.",
     img: "https://picsum.photos/103/103",
   },
 ];
+
 const Testimonial = () => {
   return (
-    <>
-      <div className="flex flex-col justify-center items-center bg-white dark:bg-gray-900 dark:text-white">
-        <div className="text-center mb-20 max-w-[400px] ">
-          <h1 className="text-sm bg-gradient-to-r to-secondary from-primary bg-clip-text text-transparent">
-            Testimonial
-          </h1>
-          <h1 className="text-3xl font-bold">Testimonial</h1>
-          <p className="text-xs text-gray-400">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
-            nesciunt explicabo a! Laborum delectus aliquam labore, earum rerum
-            quam! Nulla?
-          </p>
-        </div>
-        <div data-aos="fade-up" className="max-w-[700px] mx-auto">
-          <Swiper
-            modules={[Pagination, Autoplay]}
-            pagination={{ clickable: true }}
-            spaceBetween={20}
-            slidesPerView={1}
-            breakpoints={{ 768: { slidesPerView: 2 } }}
-            loop={true}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-            className="mx-auto"
-          >
-            {testimonialData.map((item) => (
-              <SwiperSlide key={item.id}>
-                <div className="relative flex flex-col items-center w-full max-w-[300px] justify-center rounded-2xl shadow-md bg-black/10 px-3 py-4 space-y-4 mb-12">
-                  <div>
-                    <img
-                      src={item.img}
-                      alt=""
-                      className="w-[120px] h-[120px] rounded-full object-cover"
-                    />
-                  </div>
-                  <h1 className="text-xl font-bold">{item.name} </h1>
-                  <p className="text-gray-500 text-sm"> {item.text} </p>
-                  <p className="font-serif text-9xl absolute top-0 right-0 text-black/20">
-                    ,,
+    <section className="flex flex-col items-center bg-white py-16 dark:bg-gray-900 dark:text-white">
+      <div className="mb-14 max-w-[400px] px-4 text-center">
+        <p className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-sm font-semibold text-transparent">
+          What people say
+        </p>
+        <h2 className="text-3xl font-bold">Testimonials</h2>
+        <p className="mt-2 text-xs text-gray-400">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+          nesciunt explicabo a! Laborum delectus aliquam labore, earum rerum
+          quam!
+        </p>
+      </div>
+
+      <div data-aos="fade-up" className="w-full max-w-[700px] px-4">
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          pagination={{ clickable: true }}
+          spaceBetween={20}
+          slidesPerView={1}
+          rewind={true}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          className="!pb-12"
+        >
+          {testimonialData.map((item) => {
+            return (
+              <SwiperSlide key={item.id} className="!h-auto">
+                <div className="relative flex h-full flex-col items-center rounded-2xl bg-black/5 px-5 py-8 text-center shadow-md dark:bg-white/10">
+                  <span
+                    aria-hidden="true"
+                    className="absolute right-4 top-1 font-serif text-7xl leading-none text-black/20 dark:text-white/20"
+                  >
+                    &rdquo;
+                  </span>
+
+                  <img
+                    src={item.img}
+                    alt={item.name}
+                    loading="lazy"
+                    className="h-[100px] w-[100px] rounded-full object-cover ring-4 ring-white dark:ring-gray-800"
+                  />
+
+                  <h3 className="mt-4 text-xl font-bold">{item.name}</h3>
+                  <p className="text-xs uppercase tracking-wide text-gray-400">
+                    {item.role}
+                  </p>
+                  <p className="mt-3 text-sm text-gray-500 dark:text-gray-300">
+                    {item.text}
                   </p>
                 </div>
               </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+            );
+          })}
+        </Swiper>
       </div>
-    </>
+    </section>
   );
 };
 

@@ -28,7 +28,7 @@ const FooterLinks = [
 ];
 const Footer = () => {
   return (
-    <div className="dark:bg-gray-900 dark:text-white bg-white">
+    <div className="dark:bg-gray-900 dark:text-white">
       <div className="mt-6 relative overflow-hidden min-h-[550px]  flex justify-center items-center">
         <video
           src={NatureVid}
@@ -38,7 +38,9 @@ const Footer = () => {
           className="absolute left-0 bottom-0  w-full h-full overflow-hidden object-cover z-[-1]"
         ></video>
         <div className="flex flex-col sm:flex-row gap-8 w-[90%] sm:w-[85%] md:w-[80%] lg:w-[75%]   bg-white/80 rounded-t-2xl md:justify-between md:pr-34 my-6 py-12 px-4">
-          <div className="h-full">
+          <div 
+          data-aos="zoom-in"
+          className="h-full">
             <img src={FooterLogo} alt="" className="max-w-[100px]" />
             <p className="text-sm text-gray-600 w-[200px] ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
@@ -65,7 +67,10 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="flex flex-wrap sm:flex-nowrap gap-12 py-16 sm:py-0  sm:ml-6">
+          <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          className="flex flex-wrap sm:flex-nowrap gap-12 sm:gap-20 py-16 sm:py-0  sm:ml-6">
             {/* links  */}
             <div>
               <ul>

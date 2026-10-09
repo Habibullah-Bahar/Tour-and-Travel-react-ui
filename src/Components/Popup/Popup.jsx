@@ -6,7 +6,10 @@ const Popup = ({ orderPopup, setOrderPopUp }) => {
     <>
       {orderPopup && (
         <div className="fixed h-screen w-screen top-0 left-0 z-50 backdrop-blur-sm font-serif dark:bg-gray-900 dark:text-white ">
-          <div className="fixed  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-md bg-white dark:bg-gray-900 rounded-md duration-200 w-[300px] p-4">
+          <div
+          data-aos="fade-up"
+          data-aos-duration="300"
+          className="fixed  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-md bg-white dark:bg-gray-900 rounded-md duration-200 w-[300px] p-4">
             <div className="flex justify-between items-center">
               <h1 className="text-lg">Book Your Trip</h1>
               <IoClose

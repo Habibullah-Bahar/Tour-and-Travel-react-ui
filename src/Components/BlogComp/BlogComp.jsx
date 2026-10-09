@@ -5,12 +5,15 @@ import BlogsDat from "./BlogData";
 const BlogComp = () => {
   return (
     <>
-      <div data-aos="fade-up">
-        <h1 className="border-l-8 border-primary/50 py-2 text-3xl font-bold mx-24 px-2 dark:bg-gray-900 dark:text-white">
+      <div>
+        <h1
+          data-aos="zoom-in"
+          className="border-l-8 border-primary/50 py-2 text-3xl font-bold mx-4 sm:mx-10  lg:mx-24 px-2 dark:bg-gray-900 dark:text-white"
+        >
           Our Latest Blogs
         </h1>
         <div>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 py-5 px-24 gap-6 cursor-pointer ">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 py-5 px-4 sm:px-10 lg:px-24 gap-6 cursor-pointer ">
             {BlogsDat.map((item) => (
               <Link
                 key={item.id}
@@ -21,14 +24,17 @@ const BlogComp = () => {
               >
                 <li className="shadow-md px-3 py-2">
                   <div>
-                    <div className="overflow-hidden">
+                    <div  className="overflow-hidden">
                       <img
+                      data-aos="zoom-in"
                         src={item.image}
                         className="mx-auto h-[220px] w-full object-cover transition-all duration-700 hover:skew-x-2 hover:scale-110 "
                         alt=""
                       />
                     </div>
-                    <div className="flex justify-between pt-2 text-slate-600">
+                    <div  data-aos="fade-up" 
+                    data-aos-delay="600"
+                    className="flex justify-between pt-2 text-slate-600">
                       <h1> {item.date} </h1>
                       <p className="line-clamp-1">by {item.author} </p>
                     </div>

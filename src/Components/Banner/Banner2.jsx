@@ -12,14 +12,15 @@ const Banner2 = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
           <div
           data-aos="flip-up"
+          
           >
             <img
               src={TravelImage}
               alt=""
-              className="max-w-[450px] w-full h-[200px] sm:h-[350px] object-cover mx-auto drop-shadow-[5px_5px_12px_rgba(0,0,0,0.7)]"
+              className="max-w-[450px] w-full sm:h-[300px] object-cover mx-auto drop-shadow-[5px_5px_12px_rgba(0,0,0,0.7)]"
             />
           </div>
-          <div>
+          <div className="px-4 sm:px-10 lg:px-24">
             <h1 
             data-aos="fade-up"
             className="text-3xl sm:text-4xl font-bold">

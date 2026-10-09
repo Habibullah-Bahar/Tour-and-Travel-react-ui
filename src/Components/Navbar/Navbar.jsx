@@ -37,8 +37,8 @@ const Navbar = ({ togglePopup }) => {
   };
 
   return (
-    <header className="relative z-50 w-full bg-white text-black shadow-md dark:bg-gray-900 dark:text-white">
-      {/* Top Navbar */}
+    <header className="fixed top-0 right-0  z-50 w-full bg-white text-black shadow-md dark:bg-gray-900 dark:text-white">
+      
       <div className="hidden w-full items-center justify-between bg-gradient-to-r from-primary to-secondary px-6 py-1 text-white sm:flex md:px-12 lg:px-24">
         <p className="text-sm md:text-base">20% off on next booking</p>
 
@@ -48,7 +48,6 @@ const Navbar = ({ togglePopup }) => {
         </p>
       </div>
 
-      {/* Main Navbar */}
       <nav className="w-full px-3 sm:px-4 md:px-8 lg:px-16">
         <div className="flex min-h-16 w-full items-center justify-between gap-2 sm:min-h-20">
           {/* Logo */}
@@ -65,7 +64,6 @@ const Navbar = ({ togglePopup }) => {
             />
           </Link>
 
-          {/* Desktop Navigation */}
           <div className="hidden sm:block">
             <ul className="flex items-center gap-4 lg:gap-6">
               <li className="py-4">
@@ -108,7 +106,6 @@ const Navbar = ({ togglePopup }) => {
                 </NavLink>
               </li>
 
-              {/* Dropdown */}
               <li className="group relative cursor-pointer py-4">
                 <div className="flex items-center gap-1">
                   <span>Quick Links</span>
@@ -134,16 +131,14 @@ const Navbar = ({ togglePopup }) => {
             </ul>
           </div>
 
-          {/* Actions */}
           <div className="flex shrink-0 items-center gap-2 sm:gap-3">
             <button
               onClick={togglePopup}
-              className="whitespace-nowrap rounded-full bg-gradient-to-r from-primary to-secondary px-2.5 py-1.5 text-xs text-white transition-all duration-300 hover:scale-105 sm:px-3 sm:text-sm md:px-4 md:text-base"
+              className="whitespace-nowrap rounded-full bg-gradient-to-r from-primary to-secondary px-2.5 py-1.5 text-xs text-white transition-all duration-300 hover:scale-105 sm:px-3 sm:text-sm md:px-4 md:text-base cursor-pointer"
             >
               Book Now
             </button>
 
-            {/* Mobile Menu Toggle */}
             <button
               type="button"
               onClick={toggleMenu}
@@ -157,7 +152,6 @@ const Navbar = ({ togglePopup }) => {
         </div>
       </nav>
 
-      {/* Mobile Navigation */}
       <ResponsiveMenu showMenu={showMenu} setShowMenu={setShowMenu} />
     </header>
   );

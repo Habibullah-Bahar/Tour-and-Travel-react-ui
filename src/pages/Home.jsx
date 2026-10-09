@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <>
       <div className="w-full">
-        <div className="relative isolate overflow-hidden min-h-[500px] md:min-h-[700px] w-full">
+        <div className="relative isolate overflow-hidden min-h-[700px] w-full flex justify-center items-center">
           <video
             src={NatureVideo}
             autoPlay

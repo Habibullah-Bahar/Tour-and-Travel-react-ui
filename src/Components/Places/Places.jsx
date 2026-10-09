@@ -80,7 +80,7 @@ const Places = ({ togglePopup }) => {
           >
             {PlacesData.map((item, idx) => (
               <li key={idx} className="cursor-pointer px-3 py-4 ">
-                <div className="" data-aos="fade-up">
+                <div className="" data-aos="zoom-in">
                   <div className="overflow-hidden">
                     <img
                       src={item.img}

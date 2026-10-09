@@ -28,7 +28,7 @@ const NavbarLinks = [
 const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
   return (
     <>
-      {/* Backdrop overlay */}
+      
       <div
         className={`fixed inset-0 bg-black/50 z-40 md:hidden transition-opacity duration-300 ${
           showMenu ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
