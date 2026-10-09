@@ -66,7 +66,7 @@ const PlacesData = [
 const Places = ({ togglePopup }) => {
   return (
     <div className="bg-white text-black py-10 w-full mx-auto dark:text-white dark:bg-gray-950">
-      <div className="px-24">
+      <div className="px-4 sm:px-10 lg:px-24">
         <h1
           data-aos="fade-up"
           className="border-l-8 border-primary/50 text-3xl font-bold py-2 my-8 mx-3 px-2"
@@ -80,7 +80,7 @@ const Places = ({ togglePopup }) => {
           >
             {PlacesData.map((item, idx) => (
               <li key={idx} className="cursor-pointer px-3 py-4 ">
-                <div className="" data-aos="zoom-in">
+                <div className="" data-aos="fade-up">
                   <div className="overflow-hidden">
                     <img
                       src={item.img}

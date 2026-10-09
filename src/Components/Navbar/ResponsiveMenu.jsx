@@ -39,7 +39,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
       <div
         className={`
         ${showMenu ? "left-0" : "-left-[100%]"}
-        fixed top-0 bottom-0 h-screen w-[35%] sm:w-[60%] bg-white text-black shadow-md rounded-r-2xl transition-all duration-500 z-50 dark:bg-gray-900 dark:text-white md:hidden
+        fixed top-0 bottom-0 h-screen w-[75%]  bg-white text-black shadow-md rounded-r-2xl transition-all duration-500 z-50 dark:bg-gray-900 dark:text-white md:hidden
       `}
       >
         <div className="my-16 mx-8">

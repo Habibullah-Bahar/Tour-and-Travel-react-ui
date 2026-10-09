@@ -8,7 +8,7 @@ import { IoFastFood } from "react-icons/io5";
 const Banner2 = () => {
   return (
     <>
-      <div className="bg-gray-100 min-h-[550px] px-24 pb-8 dark:bg-gray-900 dark:text-white">
+      <div className="bg-gray-100 min-h-[550px] px-4 sm:px-10 lg:px-24 pb-8 dark:bg-gray-900 dark:text-white">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
           <div
           data-aos="flip-up"
@@ -30,7 +30,7 @@ const Banner2 = () => {
               Veritatis doloremque in mollitia dicta deleniti molestiae itaque
               nostrum
             </p>
-            <div data-aos="zoom-in" className="flex gap-6 justify-between items-center">
+            <div data-aos="fade-up" className="flex gap-6 justify-between items-center">
               <div className="flex flex-col items-center gap-6 ">
                 <div className="flex gap-4 items-center">
                   <MdFlight className="text-4xl p-4 h-12 w-12 shadow-sm rounded-full bg-yellow-100 dark:bg-yellow-400" />

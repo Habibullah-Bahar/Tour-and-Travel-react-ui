@@ -17,25 +17,28 @@ const Home = () => {
     setOrderPopUp(!orderPopup);
   };
   return (
-    <div className="h-full w-full">
-      <div className="h-[700px] relative">
-        <video
-          src={NatureVideo}
-          autoPlay
-          muted
-          loop
-          className="absolute top-0 right-0 w-full h-[700px] object-cover z-[-1] "
-        /> 
-        <Hero />
+    <>
+      <div className="w-full">
+        <div className="relative isolate overflow-hidden min-h-[500px] md:min-h-[700px] w-full">
+          <video
+            src={NatureVideo}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 -z-10 h-full w-full object-cover "
+          />
+          <Hero />
+        </div>
+        <Places togglePopup={togglePopup} />
+        <Banner TravelImage={TravelImage} />
+        <Blogs />
+        <Banner2 />
+        <Banner TravelImage={TravelImage2} />
+        <Testimonial />
+        <Popup orderPopup={orderPopup} setOrderPopUp={setOrderPopUp} />
       </div>
-      <Places togglePopup={togglePopup}/>
-      <Banner TravelImage={TravelImage} />
-      <Blogs />
-      <Banner2 />
-      <Banner TravelImage={TravelImage2} />
-      <Testimonial />
-      <Popup orderPopup={orderPopup} setOrderPopUp={setOrderPopUp} />
-    </div>
+    </>
   );
 };
 

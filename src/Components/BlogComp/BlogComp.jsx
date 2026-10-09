@@ -5,7 +5,7 @@ import BlogsDat from "./BlogData";
 const BlogComp = () => {
   return (
     <>
-      <div data-aos="slide-up" data-aos-duration="1500">
+      <div data-aos="fade-up">
         <h1 className="border-l-8 border-primary/50 py-2 text-3xl font-bold mx-24 px-2 dark:bg-gray-900 dark:text-white">
           Our Latest Blogs
         </h1>

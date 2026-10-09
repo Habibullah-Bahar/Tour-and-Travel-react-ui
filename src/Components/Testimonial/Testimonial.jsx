@@ -39,23 +39,23 @@ const Testimonial = () => {
             quam! Nulla?
           </p>
         </div>
-        <div data-aos="fade-left" className="max-w-[700px] mx-auto">
+        <div data-aos="fade-up" className="max-w-[700px] mx-auto">
           <Swiper
             modules={[Pagination, Autoplay]}
             pagination={{ clickable: true }}
             spaceBetween={20}
-            slidesPerView={2}
+            slidesPerView={1}
+            breakpoints={{ 768: { slidesPerView: 2 } }}
             loop={true}
             autoplay={{
               delay: 3000,
               disableOnInteraction: false,
             }}
-            
             className="mx-auto"
           >
             {testimonialData.map((item) => (
               <SwiperSlide key={item.id}>
-                <div className="relative flex flex-col items-center w-[300px] justify-center rounded-2xl shadow-md bg-black/10 px-3 py-4 space-y-4 mb-12">
+                <div className="relative flex flex-col items-center w-full max-w-[300px] justify-center rounded-2xl shadow-md bg-black/10 px-3 py-4 space-y-4 mb-12">
                   <div>
                     <img
                       src={item.img}

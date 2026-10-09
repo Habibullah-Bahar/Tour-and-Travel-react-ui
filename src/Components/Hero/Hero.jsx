@@ -4,7 +4,7 @@ const Hero = () => {
   const [price, setPrice] = React.useState(150);
   return (
     <div className="flex justify-center items-center dark:text-white w-full object-cover h-full ">
-      <div className="flex flex-col px-auto justify-center items-center text-white w-[75%]">
+      <div className="flex flex-col px-auto justify-center items-center text-white w-[90%] sm:w-[75%]">
         <div className="text-left">
           <h1 data-aos="fade-up" className="text-md">
             Our packages

@@ -12,7 +12,7 @@ import "aos/dist/aos.css";
 
 const App = () => {
   React.useEffect(() => {
-    Aos.init({ 
+    Aos.init({
       offset: 100,
       duration: 900,
       easing: "ease-in-sine",
@@ -22,18 +22,20 @@ const App = () => {
   }, []);
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="blogs" element={<Blogs />} />
-            <Route path="blogs/:id" element={<BlogDetails />} />
-            <Route path="places" element={<PlaceRoute />} />
-            <Route path="*" element={<Nopage />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <div className="overflow-x-clip">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Home />} />
+              <Route path="about" element={<About />} />
+              <Route path="blogs" element={<Blogs />} />
+              <Route path="blogs/:id" element={<BlogDetails />} />
+              <Route path="places" element={<PlaceRoute />} />
+              <Route path="*" element={<Nopage />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </div>
     </>
   );
 };
