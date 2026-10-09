@@ -9,7 +9,7 @@ import PlaceRoute from "./pages/PlaceRoute";
 import Nopage from "./pages/Nopage";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   React.useEffect(() => {
