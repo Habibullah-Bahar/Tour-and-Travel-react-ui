@@ -73,7 +73,7 @@ const Footer = () => {
             {/* links  */}
             <div>
               <ul>
-                <h1 className="text-2xl font-bold w-5 pb-3 dark:text-gray-600">
+                <h1 className="text-2xl font-bold w-5 pb-3">
                   Important Links
                 </h1>
                 {FooterLinks.map((item, id) => (
@@ -92,7 +92,7 @@ const Footer = () => {
             {/* links  */}
             <div>
               <ul>
-                <h1 className="text-2xl font-bold w-5 pb-3 dark:text-gray-600">
+                <h1 className="text-2xl font-bold w-5 pb-3">
                   Important Links
                 </h1>
                 {FooterLinks.map((item, id) => (
@@ -111,7 +111,7 @@ const Footer = () => {
             {/* links  */}
             <div className="hidden md:block">
               <ul>
-                <h1 className="text-2xl font-bold w-5 pb-3 dark:text-gray-600">
+                <h1 className="text-2xl font-bold w-5 pb-3 ">
                   Important Links
                 </h1>
                 {FooterLinks.map((item, id) => (
