@@ -37,7 +37,7 @@ const Footer = () => {
           muted
           className="absolute left-0 bottom-0  w-full h-full overflow-hidden object-cover z-[-1]"
         ></video>
-        <div className="flex flex-col sm:flex-row gap-8 w-[90%] sm:w-[85%] md:w-[80%] lg:w-[75%]   bg-white/80 rounded-t-2xl md:justify-between md:pr-34 my-6 py-12 px-4">
+        <div className="flex flex-col sm:flex-row gap-8 w-[90%] sm:w-[85%] md:w-[80%] lg:w-[75%]   bg-white/80 dark:bg-white/40 dark:text-white rounded-t-2xl md:justify-between md:pr-34 my-6 py-12 px-4">
           <div 
           data-aos="zoom-in"
           className="h-full">
@@ -91,7 +91,7 @@ const Footer = () => {
             {/* links  */}
             <div>
               <ul>
-                <h1 className="text-2xl font-bold w-5 pb-3">Important Links</h1>
+                <h1 className="text-2xl font-bold w-5 pb-3 dark:text-gray-600">Important Links</h1>
                 {FooterLinks.map((item, id) => (
                   <li key={id}>
                     <div className="flex gap-1 items-center py-2 text-gray-600 hover:translate-x-1 transition-all duration-500 hover:text-primary">
@@ -108,7 +108,7 @@ const Footer = () => {
             {/* links  */}
             <div className="hidden md:block" >
               <ul>
-                <h1 className="text-2xl font-bold w-5 pb-3">Important Links</h1>
+                <h1 className="text-2xl font-bold w-5 pb-3 dark:text-gray-600">Important Links</h1>
                 {FooterLinks.map((item, id) => (
                   <li key={id}>
                     <div className="flex gap-1 items-center py-2 text-gray-600 hover:translate-x-1 transition-all duration-500 hover:text-primary">

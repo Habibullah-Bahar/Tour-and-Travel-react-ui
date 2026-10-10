@@ -28,7 +28,7 @@ const Home = () => {
             playsInline
             className="absolute inset-0 -z-10 h-full w-full object-cover "
           />
-          <Hero />
+          <Hero />  
         </div>
         <Places togglePopup={togglePopup} />
         <Banner TravelImage={TravelImage} />
