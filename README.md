@@ -2,7 +2,7 @@
 
 A modern, responsive tour and travel website built with **React**. Explore destinations, read travel blogs, and discover places with smooth scroll animations and a clean user interface.
 
-> **Live Demo:** https://tour-and-travel-react-ui.vercel.app/
+> **Live Website:** https://tour-and-travel-react-ui.vercel.app/
 
 ---
 
